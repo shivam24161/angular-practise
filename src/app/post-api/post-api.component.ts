@@ -17,7 +17,7 @@ export class PostApiComponent {
     "departmentLogo": "string"
   }
   ngOnInit(){
-    this.addDepartment()
+    // this.addDepartment()
   }
   addDepartment(){
     this.http.post("https://projectapi.gerasim.in/api/Complaint/AddNewDepartment",this.obj).subscribe((res:any)=>{

@@ -13,7 +13,7 @@ export class GetApiComponentComponent {
   userList=[];
   customerList=[];
   constructor(private http:HttpClient){
-    this.getAllTrain()
+    // this.getAllTrain()
   }
   getAllTrain(){
     this.http.get("https://freeapi.gerasim.in/api/TrainApp/GetAllStations").subscribe((res:any)=>{
