@@ -1,3 +1,29 @@
 import { Routes } from '@angular/router';
+import { NgIfComponent } from './ng-if/ng-if.component';
+import { Component1Component } from './component1/component1.component';
+import { ControlFlowComponent } from './control-flow/control-flow.component';
+import { GetApiComponentComponent } from './get-api-component/get-api-component.component';
+import { PostApiComponent } from './post-api/post-api.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    {
+        path:"ngIf",
+        component:NgIfComponent
+    },
+    {
+        path:"basic",
+        component:Component1Component
+    },
+    {
+        path:"controlFlow",
+        component:ControlFlowComponent
+    },
+    {
+        path:"getApi",
+        component:GetApiComponentComponent
+    },
+    {
+        path:"postApi",
+        component:PostApiComponent
+    }
+];

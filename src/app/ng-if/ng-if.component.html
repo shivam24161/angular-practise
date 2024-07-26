@@ -1,0 +1,15 @@
+<div>
+    <a [routerLink]="['']">Move to back page</a>
+    <hr/>
+    <button (click)="navigateBack()">Move back by click</button>
+    <!-- <button routerLink="">Move back by click</button> -->
+    <div *ngIf="enable1">Div 1</div>
+    <div *ngIf="enable2">Div 2</div>
+    <button (click)="enableDiv1()">click for div 1</button>
+    <button (click)="enableDiv2()">click for div 2</button>
+    <hr/>
+    <ul *ngFor="let item of obj; let ind = index">
+        <li [ngStyle]="containerStyle">{{ind}} {{item.label}}</li>
+    </ul>
+    <div class="wrapper" [ngClass]="divClass" [ngStyle]="{'color':'red'}">Applying class on this div</div>
+</div>

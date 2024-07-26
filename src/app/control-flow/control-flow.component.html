@@ -1,0 +1,38 @@
+<div>
+    @if (showDiv1) {
+        <div>Div 1</div>
+        <button (click)="hide1()">hide div 1</button>
+    }
+    @if (showDiv2) {
+        <div>Div 2</div>
+        <button (click)="hide2()">hide div 2</button>
+    }
+    <ul>
+        @for (item of objData; track $index) {
+            <li>{{$index}} {{item.label}}</li>
+        }
+    </ul>
+    <h4><span>Selected day</span> - <span>
+        @switch (dayNumber) {
+            @case (1) {
+                <span>Monday</span>
+            }
+            @case (2) {
+                <span>Tuesday</span>
+            }
+            @case (3) {
+                <span>Wednesday</span>
+            }
+            @case (4) {
+                <span>Thursday</span>
+            }
+            @case (5) {
+                <span>Friday</span>
+            }
+            @default {
+                <span>Sunday</span>
+            }
+        }
+    </span></h4>
+       
+</div>
