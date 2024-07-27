@@ -6,6 +6,7 @@ import { GetApiComponentComponent } from './get-api-component/get-api-component.
 import { PostApiComponent } from './post-api/post-api.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { InjectableComponent } from './injectable/injectable.component';
+import { PipesComponentComponent } from './pipes-component/pipes-component.component';
 
 export const routes: Routes = [
     {
@@ -35,5 +36,9 @@ export const routes: Routes = [
     {
         path:"injectable",
         component:InjectableComponent
+    },
+    {
+        path:"pipes",
+        component:PipesComponentComponent
     }
 ];
