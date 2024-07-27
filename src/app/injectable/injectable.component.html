@@ -1,0 +1,16 @@
+<p>injectable works!</p>
+<div>
+    <ul>
+        <!-- using control flow -->
+        <!-- @for (item of data; track $index) {
+            <li>{{item}}</li>
+        } -->
+
+        <!-- using structural directive -->
+         <ul>
+            <li *ngFor="let item of data; let ind = index">
+                {{item}}
+            </li>
+         </ul>
+    </ul>
+</div>

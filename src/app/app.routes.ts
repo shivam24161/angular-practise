@@ -5,6 +5,7 @@ import { ControlFlowComponent } from './control-flow/control-flow.component';
 import { GetApiComponentComponent } from './get-api-component/get-api-component.component';
 import { PostApiComponent } from './post-api/post-api.component';
 import { InputOutputComponent } from './input-output/input-output.component';
+import { InjectableComponent } from './injectable/injectable.component';
 
 export const routes: Routes = [
     {
@@ -30,5 +31,9 @@ export const routes: Routes = [
     {
         path:"inputOutput",
         component:InputOutputComponent
+    },
+    {
+        path:"injectable",
+        component:InjectableComponent
     }
 ];
