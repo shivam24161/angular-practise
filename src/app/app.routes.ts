@@ -7,6 +7,7 @@ import { PostApiComponent } from './post-api/post-api.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { InjectableComponent } from './injectable/injectable.component';
 import { PipesComponentComponent } from './pipes-component/pipes-component.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 export const routes: Routes = [
     {
@@ -40,5 +41,9 @@ export const routes: Routes = [
     {
         path:"pipes",
         component:PipesComponentComponent
+    },
+    {
+        path:"lifecycle",
+        component:LifecycleComponent
     }
 ];
