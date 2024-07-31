@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UtilityService } from '../../service/utility.service';
 
 @Component({
   selector: 'app-control-flow',
@@ -12,6 +13,11 @@ export class ControlFlowComponent {
   showDiv1 = true;
   showDiv2 = true;
   dayNumber=1;
+  constructor(private getGlobal:UtilityService){
+    this.getGlobal.getGloalObsValue.subscribe((res:any)=>{
+      console.log(res,"control flow behavior sub")
+    })
+  }
   objData=[
     {
       label:"label 1",
